@@ -1,4 +1,4 @@
--- ¿Qué tickets existen y su estado actual?
+-- Â¿QuÃ© tickets existen y su estado actual?
 SELECT
 	Title,
 	Description,
@@ -10,7 +10,7 @@ FROM Tickets
 ORDER BY Priority
 GO
 
--- ¿Qué queda por resolver?
+-- Â¿QuÃ© queda por resolver?
 SELECT
     Title,
     Category,
@@ -22,7 +22,7 @@ WHERE Status IN ('Open','In Progress')
 ORDER BY Priority DESC, CreatedDate;
 GO
 
--- Por categoría más común
+-- Por categorÃ­a mÃ¡s comÃºn
 SELECT
 	Category,
 	COUNT (*) AS TotalTickets
@@ -31,7 +31,7 @@ GROUP BY Category
 ORDER BY TotalTickets DESC;
 GO
 
--- ¿Cuántos problemas críticos tenemos?
+-- Â¿CuÃ¡ntos problemas crÃ­ticos tenemos?
 SELECT 
 	Priority,
 	COUNT (*) AS TotalTickets
@@ -97,14 +97,14 @@ GROUP BY C.Fullname, C.Department
 ORDER BY TotalTickets DESC
 GO
 
--- Tiempo promedio de resolución (días)
+-- Tiempo promedio de resoluciÃ³n (dÃ­as)
 SELECT 
 	AVG(DATEDIFF(DAY, CreatedDate, ResolvedDate)) AS AvgResolutionDays
 FROM Tickets
 WHERE ResolvedDate IS NOT NULL
 GO
 
--- ¿Qué tipo de problema tarda más en resolverse?
+-- Â¿QuÃ© tipo de problema tarda mÃ¡s en resolverse?
 SELECT
     Category,
     AVG(DATEDIFF(DAY, CreatedDate, ResolvedDate)) AS AvgResolutionDays
