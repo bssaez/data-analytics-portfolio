@@ -91,7 +91,7 @@ SalesDB-analysis/
 ├── schema.sql
 ├── inserts.sql
 ├── queries.sql
-├── insights_salesDB.md
+├── insights.md
 ```
 
 ---
