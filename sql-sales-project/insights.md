@@ -82,7 +82,8 @@ ES: Es clave balancear estrategias entre volumen y margen.
 EN: Balancing volume-driven and margin-driven strategies is essential.
 
 
-## Overall Conclusion / Conclusión General
+## Overall Conclusion 
+## Conclusión General
 
 **ES**  
 El análisis de SalesDB muestra un negocio impulsado por pocas categorías clave, con oportunidades claras en gestión de inventario, fidelización de clientes y optimización del desempeño del equipo de ventas.
